@@ -7,8 +7,8 @@
 
 ## 1. create_time_feature
 
-시계열 데이터 특성을 활용하여 이미 가진 feature에서 시계열 패턴을 추출하는 코드 상세이다.
-해당 파일의 '0.Result Code' 셀을 활용하면 다음과 같은 시계열 패턴을 추출하여 feature로 추가할 수 있다.
+시계열 데이터 특성을 활용하여 이미 가진 feature에서 시계열 패턴을 추출하는 코드 상세이다.  
+해당 파일의 '0.Result Code' 셀을 활용하면 다음과 같은 시계열 패턴을 추출하여 feature로 추가할 수 있다.  
 
 - **index를 시계열 데이터에 맞추어 세팅**
 - **count_trend** : 타겟 데이터인 count의 Trend 패턴을 추출하여 추가한 feature
@@ -27,3 +27,14 @@
 - **count_lag1** : 타겟 데이터인 count를 shift하여 한 시점 이전의 count값
 - **count_lag2** : 타겟 데이터인 count를 shift하여 두 시점 이전의 count값
 - **Quater_Dummy#** : 카테고리 데이터를 활용하기 위해 get_dummies를 통해 onehot incoding을 수행한 feature
+
+--------------------------------------
+
+## 2. check_features_visually
+
+시계열 데이터가 가지고있는 기존 feature들과 feature engineering을 통해 얻어진 feature들을 함께 활용하여 시각화 하고 이를 통해 데이터가 가진 특성을 이해할 수 있다. 
+
+해당 실습 파일에서는 몇 가지의 feature들 만으로 scatter plot, box plot, cross table, correlation 등의 시각화를 진행하였지만  
+실제 분석을 할 때는 되도록 충분히 많은 feature들의 조합을 확인하여 데이터에 대한 insight를 얻어내는 것이 중요하다.  
+
+-----------------------------------
